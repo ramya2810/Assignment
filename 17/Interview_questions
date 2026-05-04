@@ -1,0 +1,42 @@
+1) Data Preparation & Exploration:
+=>Converted date column to datetime for time-series consistency
+=>Set date as index → required for time-based modeling
+=>Checked missing values and applied forward fill
+=>Visualized exchange rate trend → identified non-stationarity
+=>Used ADF test → confirmed need for differencing
+
+2) Model Selection & Parameter Justification:
+ARIMA:
+=>Used ADF test → non-stationary → applied differencing (d=1)
+=>Used ACF & PACF plots:
+    -PACF → AR term (p)
+    -ACF → MA term (q)
+    -Selected (1,1,1) as baseline
+Exponential Smoothing:
+=>Used additive trend
+=>No seasonality → because dataset didn’t show repeating cycles
+LSTM:
+Used because:
+=>Captures non-linear patterns
+=>Handles long-term dependencies
+Hyperparameters:
+=>Units (32, 50, 64) → model complexity
+=>Learning rate → convergence speed
+=>Batch size → training stability
+
+3) Diagnostics & Evaluation:
+ARIMA Diagnostics:
+=>Residual plots → check randomness
+=>QQ plot → check normality
+=>ACF of residuals → no autocorrelation
+Evaluation Metrics:
+=>MAE → average error
+=>RMSE → penalizes large errors
+=>MAPE → percentage error (interpretable)
+=>Lower RMSE = better predictive performance
+
+Conclusion:
+=>ARIMA works well for linear patterns
+=>Exponential Smoothing captures trend efficiently
+=>LSTM performs better if data has complex patterns
+

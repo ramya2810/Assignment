@@ -1,0 +1,13 @@
+PCA:
+=>PCA reduces dimensionality while preserving variance
+=>Clustering on PCA data is faster
+=>Noise is reduced → better cluster separation
+
+Trade-offs of PCA:
+=>Reduces dimensions → faster computation
+=>Removes noise & redundancy
+=>Loss of interpretability
+=>Some information loss
+
+Conclusion:
+PCA effectively reduced the dataset dimensionality while retaining most of the variance. Clustering performed on PCA-transformed data showed comparable or improved performance based on evaluation metrics. This demonstrates that PCA can enhance clustering efficiency while reducing computational cost, though at the expense of interpretability.

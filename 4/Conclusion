@@ -1,0 +1,2 @@
+Conclusion:
+The dataset was cleaned by removing unnecessary administrative fields, handling missing values, and eliminating duplicates. Data from multiple sources was successfully merged, and additional records and features were added without creating inconsistencies or duplicate columns. The final dataset is structured and ready for further analysis.

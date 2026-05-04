@@ -1,0 +1,14 @@
+Hyperparameter Choices:
+-hidden_layer_sizes=(64, 32)
+-Increased network depth and neurons to capture more complex patterns compared to the base model (32). Helps improve learning capacity.
+activation='relu'
+-ReLU is computationally efficient and avoids vanishing gradient issues, making it suitable for deep networks.
+solver='adam'
+-Adam optimizer is adaptive and performs well on most datasets with minimal tuning.
+max_iter=500
+-Increased iterations ensure better convergence, especially for deeper networks.
+random_state=42
+-Ensures reproducibility of results.
+
+Conclusion:
+The tuned model shows improved performance compared to the base model due to increased network complexity and better optimization. The addition of an extra hidden layer allows the model to learn more complex feature interactions, while the use of the Adam optimizer and ReLU activation improves convergence and computational efficiency.

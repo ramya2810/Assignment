@@ -1,0 +1,28 @@
+1. What is the difference between precision and recall?
+Precision:
+=>Out of all predicted positive (diabetic) cases, how many are actually positive?
+ Precision = TP / TP + FP
+=>Focus: Prediction correctness
+=>High precision → fewer false positives
+
+Recall:
+=>Out of all actual positive (diabetic) cases, how many did we correctly detect?
+ Recall = TP / TP + FN
+=>Focus: Capturing all real positives
+=>High recall → fewer false negatives
+
+2. What is cross-validation, and why is it important in binary classification?
+Cross-validation is a technique used to evaluate a model by splitting the dataset into multiple parts (folds) and training/testing the model multiple times.
+Most common type: K-Fold Cross-Validation
+=>Data is divided into K equal parts (folds)
+=>Model is trained on K-1 folds
+=>Tested on the remaining fold
+=>This process repeats K times
+=>Final performance = average of all runs
+
+Why is it Important in Binary Classification?
+ 1. Better Performance Estimate
+ 2. Reduces Overfitting
+ 3. Uses Data Efficiently
+ 4. Helps Model Selection
+ 5. Handles Class Imbalance Better

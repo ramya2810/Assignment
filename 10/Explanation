@@ -1,0 +1,8 @@
+Explanation:
+=>Linear → works well for linearly separable data
+=>RBF → handles non-linear patterns (usually best)
+=>Polynomial → may overfit
+=>RBF kernel performed best, indicating non-linear relationships in the dataset.
+
+Conclusion:
+The SVM model was successfully implemented after preprocessing and feature scaling. Hyperparameter tuning improved model performance, with the RBF kernel giving the best accuracy. The confusion matrix and classification report indicate that the model performs well in predicting drug response, though minor misclassifications exist.

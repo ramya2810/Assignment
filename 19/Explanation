@@ -1,0 +1,11 @@
+Model Comparison Insight:
+=>Logistic Regression performs well for linear separable text data and is faster.
+=>SVM can handle high-dimensional TF-IDF features effectively.
+=>Based on results:
+    -If SVM > LR → better margin separation
+    -If LR ≈ SVM → simpler model preferred
+    
+Cross-validation insight:
+=>CV scores confirm model stability.
+=>Small variance → model is reliable
+=>Large variance → model overfitting

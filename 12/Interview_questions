@@ -1,0 +1,71 @@
+1. Explain Bagging and Boosting methods. How is it different from each other.
+Bagging:
+Reduce variance by training multiple models independently on different random samples of the data.
+How it works:
+=>From the original dataset, create multiple bootstrap samples (random sampling with replacement).
+=>Train a separate model (e.g., decision tree) on each sample.
+Combine predictions:
+=>Classification → Majority voting
+=>Regression → Averaging
+Key characteristics:
+=>Models are trained in parallel
+=>Reduces variance
+=>Works best with high-variance models
+
+Boosting:
+Reduce bias by training models sequentially, where each model focuses on correcting the errors of the previous one.
+How it works:
+=>Start with a simple model.
+=>Identify errors (misclassified points).
+=>Give more weight/importance to those errors.
+=>Train the next model focusing more on difficult cases.
+=>Combine models (weighted sum or voting).
+Key characteristics:
+=>Models are trained sequentially (dependent on previous ones)
+=>Reduces bias (improves underfitting)
+=>Can be sensitive to noise and outliers
+
+2. Explain how to handle imbalance in the data.
+Handling imbalanced data (where one class heavily outweighs the other, like fraud vs normal transactions) is crucial—otherwise your model may look “accurate” but completely fail on the minority class.
+Techniques to Handle Imbalance:
+1. Data-Level Methods (Resampling)
+a) Oversampling (increase minority class)
+Duplicate or synthetically create minority samples
+Popular method:
+SMOTE
+Pros:
+Balances dataset without losing data
+Cons:
+Can cause overfitting (especially simple duplication)
+b) Undersampling (reduce majority class)
+Remove samples from majority class
+Pros:
+Faster training
+Cons:
+Loss of useful information
+c) Hybrid methods
+Combine both oversampling + undersampling
+2. Algorithm-Level Methods
+a) Use class weights
+Assign higher penalty to minority class errors
+Available in models like:
+=>Logistic Regression
+=>Support Vector Machine
+b) Use ensemble techniques
+Boosting methods handle imbalance better:
+=>AdaBoost
+=>Gradient Boosting
+3. Evaluation Strategy
+Instead of accuracy, use,
+=>Confusion Matrix
+=>Precision / Recall
+=>F1-score
+=>ROC-AUC
+4. Threshold Tuning
+=>Default threshold = 0.5
+=>Adjust it to favor minority class
+5. Anomaly Detection (for extreme imbalance)
+Treat minority class as anomaly
+Use models like:
+=>Isolation Forest
+=>One-Class SVM

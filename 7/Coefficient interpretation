@@ -1,0 +1,3 @@
+Coefficient Interpretation:
+=>Each coefficient represents how much the Price changes when that feature increases by 1 unit (keeping others constant).
+=>Since we used StandardScaler, coefficients show impact in terms of standard deviations, not original units.
