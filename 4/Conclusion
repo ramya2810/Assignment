@@ -1,0 +1,2 @@
+Conclusion:
+The dataset was cleaned and processed by removing unnecessary columns, handling missing values, and removing duplicates. Department-wise billing analysis and dataset merging were performed successfully. New patient records and additional billing columns were added using row-wise and column-wise concatenation, and the final bill amount was calculated after applying discounts.

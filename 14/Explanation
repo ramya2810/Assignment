@@ -1,0 +1,24 @@
+Clustering on Original Data:
+=>K-Means applied on standardized original data produced meaningful clusters.
+=>Since all features are retained, the clustering captures complete information from the dataset.
+=>However, higher dimensionality increases computational complexity and may introduce redundant information.
+
+Clustering on PCA-Transformed Data:
+=>PCA reduced the dimensionality while preserving 95% of the variance.
+=>K-Means on PCA-transformed data produced clusters that were visually clearer and computationally efficient.
+=>Noise and redundant correlations between variables were reduced after PCA transformation.
+
+Impact of Dimensionality Reduction:
+Advantages of PCA:
+=>Reduces dimensionality of the dataset.
+=>Removes correlated and redundant features.
+=>Improves computational efficiency.
+=>Helps in better visualization of high-dimensional data.
+=>Reduces noise and overfitting risk.
+Trade-Offs of PCA:
+=>Some information is lost during dimensionality reduction.
+=>Principal Components are harder to interpret compared to original features.
+=>Excessive reduction may decrease clustering performance.
+
+Conclusion:
+The Wine dataset was successfully preprocessed by handling missing values and scaling features.Exploratory Data Analysis using histograms, boxplots, heatmaps, and density plots helped understand feature distributions and correlations.PCA was applied to reduce dimensionality while retaining 95% of the dataset variance.K-Means clustering was performed on both original and PCA-transformed datasets.Cluster evaluation using Silhouette Score and Davies-Bouldin Index showed that PCA maintained good clustering quality while reducing complexity.PCA improved visualization and computational efficiency with minimal information loss.Overall, dimensionality reduction using PCA proved effective for simplifying the dataset and improving clustering analysis.

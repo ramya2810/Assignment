@@ -1,0 +1,20 @@
+Interpretation of Logistic Regression Model:
+Logistic regression predicts probability using this function:
+p = 1 / 1+e−(β0+β1x1+β2x2+...+βnxn)
+=>Each coefficient (β) shows how much a feature affects the log-odds of diabetes.
+=>Positive coefficient → increases chance of diabetes
+=>Negative coefficient → decreases chance of diabetes
+
+Example Interpretation:
+=>Glucose has the highest positive coefficient → Strongest predictor of diabetes
+=>BMI also has a positive coefficient → Higher BMI increases diabetes risk
+=>Age → Older individuals are more likely to be diabetic
+=>Features with small/negative coefficients → weaker or inverse relationship
+
+Clear Model Evaluation Interpretation:
+=>Accuracy → Overall correctness of model
+=>Precision → Out of predicted diabetic patients, how many are actually diabetic
+=>Recall → Out of actual diabetic patients, how many were correctly identified
+=>F1 Score → Balance between precision and recall
+The model achieved an accuracy of X%, indicating good overall performance. The recall score is particularly important in this case, as identifying diabetic patients correctly is critical. A higher recall ensures fewer false negatives, which is essential in healthcare applications.
+

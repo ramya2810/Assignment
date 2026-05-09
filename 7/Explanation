@@ -1,0 +1,10 @@
+Coefficient Interpretation:
+=>Each coefficient represents how much the Price changes when that feature increases by 1 unit (keeping others constant).
+=>Since we used StandardScaler, coefficients show impact in terms of standard deviations, not original units.
+
+Explanation:
+Model 1: Basic Linear Regression
+Model 2: Ridge and Lasso Regression for regularization
+Model 3: Linear Regression after removing the weakest feature
+
+The weakest feature was identified using the smallest absolute coefficient value, indicating minimal contribution to price prediction. After removing it, the model was retrained and evaluated using R² and RMSE.

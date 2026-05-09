@@ -1,0 +1,65 @@
+1.What is Normalization & Standardization and how is it helpful?
+Normalization:
+Normalization rescales data into a fixed range, usually [0, 1].
+Formula:
+Xnorm = X - Xmin / Xmax - Xmin
+
+When to use:
+=>When features have different scales
+=>When using algorithms sensitive to scale (KNN, Neural Networks)
+
+Standardization (Z-score Scaling:
+Standardization transforms data to have:
+Mean = 0
+Standard deviation = 1
+Formula:
+Xstd = X - μ / σ
+
+When to use:
+=>When data follows (or roughly follows) normal distribution
+=>Required for regression, SVM, PCA
+
+2.What techniques can be used to address multicollinearity in multiple linear regression
+Multicollinearity occurs when two or more independent variables are highly correlated, making it difficult for the model to estimate individual feature effects accurately.
+
+Problems caused:
+=>Unstable and unreliable coefficients
+=>High variance in estimates
+=>Reduced interpretability of the model
+Techniques:
+1. Detect Multicollinearity (VIF Method)
+Variance Inflation Factor (VIF)
+Measures how much variance of a coefficient is inflated due to correlation
+Interpretation:
+VIF = 1 → No correlation
+VIF > 5 → Moderate correlation
+VIF > 10 → High multicollinearity
+2. Remove Highly Correlated Features
+Approach:
+Use correlation matrix
+Drop one variable from highly correlated pairs
+3. Principal Component Analysis (PCA)
+=>Transforms correlated variables into uncorrelated components
+=>Removes multicollinearity completely
+=>Reduces dimensionality
+=>Components are harder to interpret
+4. Ridge Regression (L2 Regularization)
+=>Adds penalty to large coefficients
+=>Reduces impact of multicollinearity
+=>Keeps all features but shrinks coefficients
+5. Lasso Regression (L1 Regularization)
+=>Shrinks coefficients and sets some to zero
+=>Performs automatic feature selection
+=>Eliminates less important variables
+6. Combine Features
+Example:
+Instead of using Height & Weight → use BMI
+Explanation:
+=>Reduces redundancy
+=>Keeps meaningful information
+7. Increase Sample Size
+=>Helps reduce variance of estimates
+=>Makes model more stable
+=>Not always practical
+
+

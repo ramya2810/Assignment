@@ -1,0 +1,23 @@
+1. Trend:
+Trend = long-term direction of the data
+=>If values are increasing → Upward trend
+=>If decreasing → Downward trend
+=>If constant → No trend
+How to identify trend:
+=>Visually from the plot
+=>Or from decomposition
+2. Seasonality:
+Seasonality = repeating pattern over time
+Happens at fixed intervals (daily, monthly, yearly)
+How to identify:
+=>Regular repeating peaks and dips
+=>Seen clearly in decomposition plot
+3. Anomalies:
+Some anomalies are observed as sudden spikes/drops, which may be due to external factors or noise in the data.
+
+AIC Concept:
+Measures model quality
+Lower AIC = Better model
+
+Conclusion:
+The time series analysis shows a clear trend indicating long-term movement in the data. Seasonal patterns are also observed, where values repeat periodically over time. Some anomalies are identified as sudden spikes or drops, possibly due to external factors. The ARIMA model parameters were optimized using AIC, ensuring the selection of the best model with minimum information loss.

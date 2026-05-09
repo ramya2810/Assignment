@@ -1,0 +1,33 @@
+Model:
+=>Tried multiple combinations of:
+    -LSTM units
+    -Epochs
+    -Batch size
+=>Selected best model based on lowest RMSE
+
+Business Interpretation:
+=>Milk production data shows clear seasonal variations and trends over time. 
+=>Forecasting future milk production helps dairy industries understand expected increases and decreases in production levels.
+=>Accurate forecasting supports better inventory management, storage planning, transportation scheduling, and supply chain optimization. =>Forecast results indicate that production planning can be improved by preparing resources during high-production periods.
+
+Interpretation of Model Comparison:
+=>The performance of RNN, LSTM, and GRU models was evaluated using RMSE, MAE, and MAPE metrics.
+=>RNN model was able to capture short-term patterns in the data but showed comparatively higher error values. 
+=>LSTM model performed better because it can remember long-term dependencies and seasonal patterns using memory cells. GRU model also produced good forecasting results with faster computation due to its simpler architecture.
+=>Among all the models, the model with the lowest RMSE and MAE values is considered the best-performing model for milk production forecasting.
+
+Model Justification:
+=>The LSTM model was selected as the final forecasting model because it achieved better performance compared to RNN and GRU models. 
+=>LSTM is highly suitable for time-series forecasting tasks because it effectively captures long-term trends and seasonal variations present in milk production data.
+=>The model generated accurate forecasts and produced lower prediction errors, making it reliable for future milk production forecasting.
+
+Recommendations:
+=>Use forecasting models regularly for production planning and decision-making.
+=>Increase storage and transportation facilities during peak production months.
+=>Optimize inventory management based on forecasted production levels.
+=>Implement LSTM-based forecasting systems to reduce wastage and improve operational efficiency.
+=>Monitor seasonal production patterns continuously for better business planning.
+
+Conclusion:
+Among RNN, LSTM, and GRU models, the model with the lowest RMSE performed best.
+LSTM/GRU generally performed better due to their ability to capture long-term dependencies in time series data.

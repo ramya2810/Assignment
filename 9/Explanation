@@ -1,0 +1,40 @@
+age_group:
+=>Age is a continuous variable, but grouping it into categories helps the model capture life-stage patterns.
+=>People in different age groups often have different income behaviors.
+For example:
+Young: early career → lower income probability
+Adult: peak earning years
+Senior: retirement phase
+This transformation helps improve interpretability and may improve model performance if relationships are non-linear.
+
+hours_per_age:
+=>This is a feature interaction that normalizes working hours relative to age.
+=>It captures work intensity:
+    =>Younger individuals working long hours → higher ratio
+    =>Older individuals with fewer hours → lower ratio
+=>This can help the model understand effort vs experience balance, which may influence income.
+
+Justification for Log Transformation:
+=>The capital_gain feature was selected for log transformation because it showed high positive skewness. 
+=>Most records contain very small values while a few contain extremely large values, causing an uneven distribution. 
+=>Applying log1p() reduces skewness, minimizes the effect of outliers, and makes the data distribution more suitable for machine learning algorithms.
+
+Skewness causes:
+=>Poor model performance (especially linear models)
+=>Sensitivity to outliers
+
+Log transformation helps by:
+=>Compressing large values
+=>Making distribution more normal-like
+=>Reducing the effect of extreme outliers
+
+Feature Scaling Justification:
+=>Standardization and Min-Max scaling were applied to numerical columns to ensure all features are on a similar scale. 
+=>This improves model performance and prevents features with larger values from dominating the learning process.
+
+Encoding Justification:
+=>One-Hot Encoding was used for low-cardinality categorical variables because they contain fewer unique categories and can be represented efficiently as binary columns.
+=>Label Encoding was used for high-cardinality features to avoid creating too many additional columns, which could increase dimensionality and computational complexity.
+
+Conclusion:
+The created features (age_group and hours_per_age) were designed to capture meaningful patterns such as life-stage behavior and work intensity, which are not directly represented in the original dataset. Additionally, log transformation was applied to the highly skewed capital_gain feature to normalize its distribution, reduce the influence of outliers, and improve model performance.

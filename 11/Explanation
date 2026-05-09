@@ -1,0 +1,21 @@
+Explanation:
+Cluster 0:
+Patients with higher age, high cholesterol, and high blood pressure → High-risk group
+Cluster 1:
+Younger patients with normal vitals → Low-risk group
+Cluster 2:
+Moderate values → Medium-risk group
+=>K-Means produced well-separated clusters using PCA visualization.
+=>DBSCAN identified noise points (outliers), which is useful for anomaly detection.
+=>Silhouette score for K-Means was higher → better cluster separation.
+=>K-Means performed better because clusters were more compact and clearly separable compared to DBSCAN.
+
+K-Means:
+The elbow point occurs at K = 3, where the rate of decrease in inertia slows down. Hence, K = 3 is chosen as the optimal number of clusters.
+DBSCAN:
+eps was chosen based on distance distribution between points, ensuring meaningful neighborhood grouping.
+min_samples = 5 was selected to ensure clusters are dense and reduce noise.
+
+Business Insight:
+=>Clustering helps identify different patient risk groups.
+=>High-risk clusters can be targeted for early medical intervention, while low-risk clusters may require preventive monitoring.

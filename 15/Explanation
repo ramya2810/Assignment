@@ -1,0 +1,17 @@
+Cluster Insights:
+=>Customers in Cluster 0 have lower flight activity and fewer bonus miles, representing low-engagement customers.
+=>Customers in Cluster 1 have higher flight transactions and bonus miles, indicating loyal and frequent travelers.
+=>Customers in Cluster 2 show moderate airline usage and balanced customer behavior.
+
+PCA Insights:
+=>PCA reduced dimensionality while retaining 95% variance.
+=>Clustering performance after PCA remained similar to the original dataset.
+=>PCA helped improve visualization and reduced feature complexity.
+
+K-Means vs DBSCAN:
+=>K-Means formed clear clusters with a good silhouette score.
+=>DBSCAN identified dense regions and noise points.
+=>K-Means performed better for this dataset because customer groups were more spherical and evenly distributed.
+
+Conclusion:
+Data preprocessing and scaling improved clustering performance.K-Means provided better cluster separation compared to DBSCAN.PCA helped reduce dimensions without major information loss.Customer segmentation can help airlines identify loyal and low-engagement customers for targeted marketing strategies.

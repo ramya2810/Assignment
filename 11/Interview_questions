@@ -1,0 +1,61 @@
+1.What are some common hyperparameters of decision tree models, and how do they affect the model's performance?
+max_depth:
+=>Defines the maximum depth of the tree.
+=>A larger depth increases model complexity and may cause overfitting.
+=>A smaller depth creates a simpler model and may lead to underfitting.
+
+min_samples_split:
+=>Minimum number of samples required to split a node.
+=>Higher values reduce unnecessary splits and help avoid overfitting.
+
+min_samples_leaf:
+=>Minimum number of samples required in a leaf node.
+=>Larger values produce smoother and more generalized predictions.
+
+max_leaf_nodes:
+=>Limits the number of leaf nodes in the tree.
+=>Helps control tree size and reduces complexity.
+
+criterion:
+=>Measures the quality of a split.
+=>Common options: gini and entropy.
+=>Different criteria may slightly affect accuracy and split selection.
+
+splitter:
+=>Determines how splits are chosen.
+=>best selects the best split, while random selects random splits.
+
+max_features:
+=>Number of features considered for splitting at each node.
+=>Lower values reduce overfitting and improve randomness.
+
+class_weight:
+=>Assigns weights to classes.
+=>Useful for handling imbalanced datasets.
+
+ccp_alpha:
+=>Used for pruning the tree.
+=>Higher values remove more branches and reduce overfitting.
+
+random_state:
+=>Controls randomness in the model.
+=>Ensures reproducible results.
+
+Effect on Model Performance:
+=>Increasing tree complexity improves training accuracy but may cause overfitting.
+=>Reducing complexity improves generalization but may lead to underfitting.
+=>Proper hyperparameter tuning helps achieve better accuracy and stability.
+
+
+2. What is the difference between the Label encoding and One-hot encoding?
+Label Encoding:
+=>In Label Encoding, each category is assigned a unique numerical value.
+=>It uses only one column to represent categories.
+=>It is suitable for ordinal data where order is important.
+=>It may create an unwanted ranking between categories.
+
+One-Hot Encoding:
+=>In One-Hot Encoding, separate binary columns are created for each category.
+=>Each category is represented using 0 and 1 values.
+=>It is suitable for nominal data where no order exists.
+=>It avoids the problem of assigning ranking to categories.

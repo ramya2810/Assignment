@@ -1,0 +1,35 @@
+Feature Scaling Insight:
+=>Feature scaling is an important preprocessing step in machine learning. It ensures that all features contribute equally to the model. In this assignment, both StandardScaler and MinMaxScaler were applied.
+=>StandardScaler transforms the data so that the mean becomes 0 and the standard deviation becomes 1.
+=>MinMaxScaler scales the data values between 0 and 1.
+=>Scaling improves model performance and prevents features with larger values from dominating the learning process.
+
+Correlation Analysis Insight:
+=>The correlation heatmap helps identify relationships between variables in the dataset.
+=>Positive correlation indicates that two variables increase together.
+=>Negative correlation indicates that one variable increases while the other decreases.
+=>Features with strong correlations may have significant influence on prediction.
+=>The heatmap provides a better understanding of feature relationships and dataset patterns.
+
+Bagging Insight:
+Bagging (Bootstrap Aggregating) improves model stability and reduces variance by training multiple models on different random subsets of the dataset.
+Advantages:
+=>Reduces variance
+=>Improves stability
+=>Helps avoid overfitting
+=>Works efficiently with decision tree models
+
+Boosting Insight:
+Boosting is an ensemble technique that builds models sequentially. Each new model focuses on correcting the errors made by the previous model.
+Advantages:
+=>Improves prediction accuracy
+=>Converts weak learners into strong learners
+=>Focuses on difficult observations
+
+Model Comparison Insight:
+=>Random Forest, Bagging, and Boosting models were trained and evaluated using accuracy score and classification report.
+=>Random Forest performs well by combining multiple decision trees.
+=>Bagging improves stability and reduces variance.
+=>Boosting improves weak learners sequentially for better accuracy.
+=>The model with the highest accuracy is considered the best performing model for this dataset.
+

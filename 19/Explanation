@@ -1,0 +1,21 @@
+Model Comparison Insight:
+=>Logistic Regression performs well for linear separable text data and is faster.
+=>SVM can handle high-dimensional TF-IDF features effectively.
+=>Based on results:
+    -If SVM > LR → better margin separation
+    -If LR ≈ SVM → simpler model preferred
+    
+Cross-validation insight:
+=>CV scores confirm model stability.
+=>Small variance → model is reliable
+=>Large variance → model overfitting
+
+Word2Vec Embedding Technique:
+Word2Vec is an advanced NLP embedding technique used to convert words into dense numerical vectors. Unlike TF-IDF, Word2Vec captures semantic relationships between words and provides contextual meaning.
+In this implementation:
+=>The cleaned reviews were tokenized into individual words.
+=>A Word2Vec model was trained using the tokenized reviews.
+=>Each word was converted into a 100-dimensional vector representation.
+=>Average word vectors were calculated for every review to create feature vectors.
+=>These feature vectors were used to train a Logistic Regression model for sentiment classification.
+=>This approach helps improve text representation by capturing similarities and relationships between words more effectively than traditional frequency-based methods.

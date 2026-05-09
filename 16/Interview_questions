@@ -1,0 +1,33 @@
+1. Difference between User-Based and Item-Based Collaborative Filtering
+
+User-Based Collaborative Filtering:
+=>Recommends items based on similar users.
+=>It finds users who have similar preferences/ratings.
+=>Then suggests items liked by those similar users.
+Example:
+If User A and User B like similar anime, and User B watched Attack on Titan but User A hasn’t, then recommend it to User A.
+
+Item-Based Collaborative Filtering:
+=>Recommends items based on similar items.
+=>It finds items that are similar based on user ratings.
+=>Then suggests items similar to what the user already liked.
+Example:
+If you liked Naruto, and many users who liked Naruto also liked Bleach, then Bleach is recommended.
+
+2. What is Collaborative Filtering and How Does It Work?
+Definition:
+Collaborative Filtering is a recommendation technique that suggests items based on the preferences of similar users or similar items, without needing item features.
+How It Works:
+=>Collect User-Item Data:
+    -Ratings, likes, watch history, etc.
+=>Build a Matrix:
+    -Rows → Users
+    -Columns → Items (anime)
+    -Values → Ratings
+=>Compute Similarity:
+    -Use similarity measures like:
+        -Cosine Similarity
+        -Pearson Correlation
+=>Generate Recommendations
+    -User-based: Find similar users → recommend their liked items
+    -Item-based: Find similar items → recommend related items

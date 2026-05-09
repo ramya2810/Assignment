@@ -1,0 +1,26 @@
+EDA Insights:
+=>Histograms show the distribution of numerical features and help identify whether the data is normally distributed or skewed.
+=>Boxplots help detect outliers in the dataset. Some features contain extreme values, which may influence SVM performance.
+=>The correlation heatmap shows relationships between variables. Features with higher correlation may have stronger influence on predicting the drug response.
+=>Pairplot visualization helps understand class separation between different drug response categories.
+=>Countplot indicates whether the target variable is balanced or imbalanced across classes.
+
+Model Performance Insights:
+=>The SVM model using the RBF kernel achieved good classification accuracy, showing that nonlinear decision boundaries are effective for this dataset.
+=>The classification report provides precision, recall, and F1-score for each class, indicating how well the model predicts different drug response categories.
+=>The confusion matrix shows the number of correct and incorrect predictions and helps identify misclassified classes.
+
+Hyperparameter Tuning Insights:
+=>GridSearchCV was used to find the best combination of parameters such as C, kernel, and gamma.
+=>Tuning improves model performance by selecting optimal parameters for classification.
+
+Kernel Comparison Analysis:
+=>Linear kernel works well when data is linearly separable.
+=>Polynomial kernel captures more complex relationships but may increase computation time.
+=>RBF kernel generally performs best because it handles nonlinear patterns effectively.
+=>Comparing kernel accuracies helps identify the most suitable kernel for the dataset.
+
+Conclusion:
+=>The assignment successfully demonstrates EDA, visualization, SVM classification, model evaluation, and hyperparameter tuning.
+=>Among different kernels, the best-performing kernel provides improved prediction accuracy for drug response classification.
+=>Proper interpretation of visualizations and model comparison improves understanding of the dataset and machine learning performance.
